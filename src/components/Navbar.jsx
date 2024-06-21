@@ -5,8 +5,8 @@ import { NavLink } from "react-router-dom"
 const Navbar = ({setCaterory,handleSearchChange}) => {
    
   return (
-    <div className='flex justify-between items-center bg-blue-500 text-white px-[3rem] py-2'>
-      <div className='flex items-center gap-4'>
+    <div className='lg:flex lg:justify-between items-center bg-blue-500 text-white px-[3rem] py-2'>
+      <div className='lg:flex items-center gap-4'>
          <div>
             <h1 className='text-xl font-bold'>NewApp.</h1>
           </div>
