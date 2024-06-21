@@ -2,10 +2,10 @@ import { NavLink } from "react-router-dom"
 
 
 
-const Navbar = ({setCaterory}) => {
+const Navbar = ({setCaterory,handleSearchChange}) => {
    
   return (
-    <div className='flex justify-between items-center bg-black text-white p-2'>
+    <div className='flex justify-between items-center bg-blue-500 text-white px-[3rem] py-2'>
       <div className='flex items-center gap-4'>
          <div>
             <h1 className='text-xl font-bold'>NewApp.</h1>
@@ -40,11 +40,8 @@ const Navbar = ({setCaterory}) => {
     </div>
             </div>
       </div>
-      <div class="flex items-center bg-white rounded-full shadow-md">
-        <input type="text" placeholder="Search..." class="rounded-l-full w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-300"/>
-        <button class="bg-blue-500 text-white rounded-r-full py-2 px-4 hover:bg-blue-600 focus:outline-none focus:shadow-outline">
-            Search
-        </button>
+      <div class="flex items-center gap-4">
+        <input type="text" onChange={handleSearchChange} placeholder="Search..." class="rounded-xl w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-300"/>
     </div>
 
     </div>
