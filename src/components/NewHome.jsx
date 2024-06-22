@@ -9,11 +9,11 @@ const NewHome = () => {
     const [category,setCaterory] = useState('general')
     const [currentPage, setCurrentPage] = useState(1);
     const [searchQuery, setSearchQuery] = useState('');
-    const articlesPerPage = 5; // Set the number of articles per page
+    const articlesPerPage = 5;
 
     const handleSearchChange = (event) => {
       setSearchQuery(event.target.value);
-      setCurrentPage(1); // Reset to first page on new search
+      setCurrentPage(1); 
     };
 
  

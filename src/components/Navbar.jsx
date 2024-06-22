@@ -6,9 +6,9 @@ const Navbar = ({setCaterory,handleSearchChange}) => {
    
   return (
     <div className='lg:flex lg:justify-between items-center bg-blue-500 text-white px-[3rem] py-2'>
-      <div className='lg:flex items-center gap-4'>
+      <div className='lg:flex items-center gap-4 lg:py-0 py-4'>
          <div>
-            <h1 className='text-xl font-bold'>NewApp.</h1>
+            <h1 className='text-xl font-bold lg:py-2 py-2'>NewApp.</h1>
           </div>
 
             <div>
@@ -40,7 +40,7 @@ const Navbar = ({setCaterory,handleSearchChange}) => {
     </div>
             </div>
       </div>
-      <div class="flex items-center gap-4">
+      <div class="flex items-center gap-4 lg:py-0 py-2">
         <input type="text" onChange={handleSearchChange} placeholder="Search..." class="rounded-xl w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-300"/>
     </div>
 

@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 const NewItem = ({title,description,url,img}) => {
   const fallbackImage = 'https://media.istockphoto.com/id/1323187298/vector/vector-illustration-modern-label-new-update-with-bell-web-banner-element.jpg?s=612x612&w=0&k=20&c=1DDPkWIG-XrBOswev6IeOFVuXgAZY-EjWjVQlre4p64='
   return (
-<div className="bg-white rounded-lg shadow-lg w-full h-[70vh] overflow-hidden">
+<div className="bg-white rounded-lg shadow-lg w-full lg:h-[70vh] overflow-hidden">
       <img src={img || fallbackImage} alt={title} className="w-full h-[200px] object-cover"/>
       <div className="p-4">
         <h2 className="text-sm font-bold mb-2">{title?.substring(0,25)}</h2>
